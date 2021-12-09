@@ -1,0 +1,606 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    min-height: 25%;
+    max-height: 25%;
+    background-image: url(../Assets/1920px-Carcassonne_mod.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+.title{
+    display: flex;
+    align-items: center;
+    
+}
+
+.title h1{
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: black 5px 0 20px;
+}
+
+@media (max-width: 850px)  {
+    .title{
+        width: 100%;
+        min-height: 80px;
+        backdrop-filter: blur(2px);
+        
+    }
+    .title h1{
+        margin: 0;
+        font-size: 20px;
+        text-align: center;
+        
+        height: 100%;
+    }
+  
+}
+
+
+.logo1{
+    margin: 1%; 
+    width: 10%;
+    height: 2%;
+}
+
+.Aude{
+    width: 150%;
+    
+}
+
+
+/*Welcome screen starts here*/
+.welcome{
+    color: royalblue;
+}
+
+.to{
+    color: seashell;
+}
+
+.hell{
+    color: red;
+}
+/*Welcome screen ends here*/
+.logo2{
+    margin: 1%;
+    width: 10%;
+    height: 2%;
+}
+
+.blason{
+    width: 85%;
+ 
+}
+@media (max-width: 641px) {
+    .logo1{
+        display: none;
+    }
+    .title h1{
+        max-width: 80%;
+        word-wrap: break-word;
+        font-size: 20px;
+        text-align: center;
+        }
+    .logo2{
+    width: 20%;
+
+    }        
+
+}
+
+
+
+
+
+
+/*The Nav bar starts here*/
+.navigation ul, .navigation a{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin: 0 auto;
+   
+}
+.navigation{
+    background-color: rgb(128, 0, 0) ;
+    width: 100%;
+    
+}
+
+
+.navigation li{
+    margin: auto;
+    width: fit-content;
+    padding: 5px;
+}
+
+.navigation a{
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'IM Fell English', serif;
+    font-size: 30px;
+    text-shadow: black 5px 0 20px;
+    
+}
+@media (max-width: 650px) {
+    
+    .navigation{
+        position: fixed;
+        display: flex;
+        margin: 0 auto;
+        bottom: 0;
+        z-index: 1000;
+        max-width: 100%;
+        }
+
+    .navigation a{
+        font-size: 15px ;
+        
+    
+    }
+   
+
+    .navcon{
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+        background: blanchedalmond;
+    }
+
+}
+
+.navigation a:hover{
+    text-decoration: underline;
+}
+/*The Nav bar starts here*/
+
+/*The content Starts here*/
+
+body{
+    background: #ABA3C2;
+    align-content:center ;
+    scroll-behavior: smooth;
+}
+
+.bgcolor{
+    background: #FCF5E5;
+    margin: 0 auto;
+    padding: 35px;
+    max-width: 1000px;
+}
+
+.container{
+    text-align: center;
+    padding: 15px 0;
+    width: fit-content ;
+    height: fit-content;
+    scroll-behavior: smooth;
+}
+
+
+.slogan{ 
+    font-family:"Gothic A1";
+    text-shadow: black 5px 0 25px;
+    margin-bottom: 35px;
+}
+
+.slogan b{
+    color: #DD7400;
+    text-shadow: rgb(255, 217, 1) 5px 0 20px;
+}
+
+.text-content{
+    margin-top: 4%;
+    text-align: justify;
+    max-width: 950px;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+
+}   
+.text-content h2{
+    font-family:  'Cinzel Decorative', cursive;
+    width: fit-content;
+    font-size: 25px;
+
+    text-decoration: black underline;
+    text-align: center;
+}
+
+.text-content p {
+    margin-top: 20px;
+}
+ 
+.text-content a{
+    color: black;
+    text-decoration: none;
+}
+
+
+  
+  #content {
+    position: absolute;
+    margin-left: -11000px;
+  }
+  
+  #show:target #content {
+    display: block;
+    position: relative;
+    margin-left: 0;
+    height: auto;
+    
+  }
+  
+  #show:target #open a{
+    display: none;
+    
+  }
+
+#last{
+    margin: 0 auto ;   
+}
+
+@media (max-width: 800) {
+    .slogan{
+        padding: 10px 0;
+    }
+    .container{
+     width: 100%;
+     align-items: center;
+     max-width: 800px;
+ }
+ .bgcolor{
+     max-width: 800px;}
+ }
+
+
+ @media (max-width: 641px) {
+    .slogan{
+        padding-top: 10px;
+    }
+    .container{
+     width: 100%;
+     align-items: center;
+     max-width: 640px;
+ }
+ .bgcolor{
+    word-wrap: normal;
+   
+  
+    padding: 0;
+    }
+    .slogan{
+        font-size: 10px;
+    }
+    
+
+.text-content{
+    overflow-wrap: break-word;
+    max-width: 640px;
+    word-wrap: break-word;
+    font-size: 15px;
+    white-space: normal;
+    padding: 5px;
+    margin: 15px;
+}
+.text-content> h2{
+    margin: 10px auto 5px;
+}
+
+}
+
+
+
+
+
+.map{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin: 4% 0;
+}
+
+.map .text-content{
+    background: none;
+}
+
+.map p{
+    width: 400px;
+    /* background: #C4C4C4; */
+    padding: 5px;
+}
+.map iframe{
+    height: 400px;
+    margin-top: 5%;
+    margin-left: 20px;
+}  
+
+@media (max-width: 640px) {
+    .map{
+        display: block;
+     
+    }
+    .map p{
+        width: 100%;
+        /* background: #C4C4C4; */
+        padding: 0px;
+    }
+    .map iframe{
+        height: 400px;
+        width: 100%;
+        margin-top: 10px;
+         margin-left: -10px;
+    }  
+
+}
+
+.slider{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background: seashell;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    overflow: hidden; 
+}
+
+.slide{
+    display: flex;
+    height: 200px;
+    align-items: center;
+     animation: slideshow 18s linear infinite;
+    
+}
+
+
+
+.slide img{
+    height: 170px;
+    padding: 0 20px;
+}
+
+ @keyframes slideshow {
+    0% {transform: translateX(0);}
+     100% {transform: translateX(-100%);}
+} 
+
+@media (max-width: 641px) {
+    .slide{
+        display: flex;
+        height: 200px;
+        align-items: center;
+         animation: slideshow 20s linear infinite;
+        
+    }
+}
+
+/*Fade in starts below*/
+
+.slider::before, .slider::after{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    content: " ";
+    background: linear-gradient(to right, rgba(247, 92, 92, 0.2) 0%, rgba(255,255,255,0)100%);
+    z-index: 800;
+}
+
+.slider::before{
+    left: 0;
+    top: 0;
+}
+.slider::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+} 
+
+footer a, footer ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Fade in ends here */
+
+/* Footer Starts here */
+.footer{
+    width: 100%;
+    background: rgb(42, 42, 153);
+}
+.footer > h2{
+    padding: 10px;
+    margin: 0 auto;
+    
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: white  5px 0 20px;
+
+}
+.footercontainer{
+    display: flex;
+   padding: 10px;
+}
+.footercontainer ul{
+    text-align: center;
+    margin: 10px auto 0;
+    
+}
+.footer-headlist{
+    background: slateblue;
+    padding: 10px;
+}
+
+.footercontainer a{
+    color: white;
+    text-transform: uppercase;
+   
+}
+
+.footer-list{
+    font-size: medium;
+    background: royalblue;
+    padding: 10px;
+    border-bottom: 2px solid black;
+ 
+}
+
+.footer-list:hover a{
+    
+    text-decoration: underline;
+    color: red;
+}
+
+/* Footer ends here */
+
+@media (max-width: 641px) {
+    .slider{
+        width: 100%;
+      
+    }
+    .footer{
+        margin-bottom: 45px ;
+    }
+    .footercontainer{
+        display: block;
+       padding: 10px;
+       justify-content: space-evenly;
+    }
+
+    .footercontainer ul{
+        margin: 15px 0  ;
+    }
+    .footercontainer a{
+        color: white;
+        font-size: 20px;
+    }
+}
+
+
+/* Part for Tourist spot */
+.logoT{
+    left: 0;
+    margin: auto 0;
+    width: 25%;
+    height: 50%;
+    opacity: 0.5;
+}
+
+.logoT img{
+    height: 100%;
+    width: 100%;
+}
+
+.bgcolorT{
+    background: #ABA3C2;
+   justify-content: space-around;
+    padding: 15px;
+    max-width: 100%;
+}
+
+.title-T{
+    display: flex;
+    width: 100%;
+    height: 30%;
+}
+
+.logo2T{
+    margin-left: auto;
+    width: 10%;
+    height: 2%;
+    opacity: 0.75;
+}
+.logo2T img{
+    height: 100%;
+    width: 100%;
+}
+
+.sloganT{
+    opacity: 0.7;
+    margin: 10px auto;
+}
+
+.sloganT b{
+    color: #DD7400;
+    text-shadow: rgb(255, 217, 1) 5px 0 20px;
+}
+
+.tourist-content{
+    display: flex;
+    position: relative;
+    background: #FCF5E5;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 100%;
+    height: 20%;
+}
+
+.tourist-content:nth-of-type(odd){
+  margin-left: 15%;
+  
+}
+
+.tourist-content a{
+   margin: 20px 0;
+    text-decoration: none;
+}
+
+.tourist-content h2{
+    margin: 0 auto;
+    height: fit-content;
+    font-family:  'Cinzel Decorative', cursive;
+}
+
+.tourist-content img{
+    max-width: 450px;
+    min-width: 450px;
+    max-height: 100%;
+    min-height: 100%;
+}
+.tourist-content ul{
+    list-style: none;
+    background-color: rgb(208, 200, 236) ;
+    margin: 10px;
+}
+
+.tourist-content li{
+    display: inline-block;
+  
+    margin: 10px;
+    height: 90%;
+}
+
+.hoverme{
+    font-size: 30px;
+    transition: opacity 0.5s;
+}
+
+.content-desc{
+    opacity: 0;
+    font-family:  'Times New Roman', Times, serif ;
+    font-size: 20px;
+    text-align: justify;
+    word-wrap: break-word ;
+    transition: opacity 0.5s;
+}
+
+.tourist-content ul:hover .content-desc{
+    transition: linear 0.5s ;
+    opacity: 1;
+}
+
+.tourist-content ul:hover .hoverme{
+    opacity: 0;
+    transition: linear 0.5s ;
+}
