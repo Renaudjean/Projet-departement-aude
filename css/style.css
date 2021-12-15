@@ -419,7 +419,7 @@ body{
 
 footer a, footer ul{
     text-decoration: none;
-    list-style: none;
+    
 }
 
 /* Fade in ends here */
@@ -448,22 +448,24 @@ footer a, footer ul{
     
 }
 .footer-headlist{
-    background: slateblue;
+  
     padding: 10px;
 }
 
 .footercontainer a{
     color: white;
-    text-transform: uppercase;
+    text-decoration: white underline;
+    word-wrap: break-word;
    
 }
 
 .footer-list{
     font-size: medium;
-    background: royalblue;
+    margin: 0 auto;
     padding: 10px;
-    border-bottom: 2px solid black;
- 
+  
+    width: 300px;
+    
 }
 
 .footer-list:hover a{
@@ -770,3 +772,97 @@ footer a, footer ul{
 }
 
 /* End of Tourist spot */
+
+/* Start of Market/event page */
+
+.containerM{
+    text-align: center;
+ 
+    height: fit-content;
+    scroll-behavior: smooth;
+    background-color: rgb(100, 100, 151);
+   padding: 15px;
+   backdrop-filter: blur(2px);
+}
+
+.contentM-desc{
+    color:aliceblue;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.contentM-desc a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    color:rgb(255, 255, 255);
+}
+
+.contentM-desc a:hover{
+    text-decoration: underline;
+
+}
+
+
+.market-content{
+    margin: 50px auto;
+    padding: 10px;
+    width: 60%;
+    align-content: center;
+    height: fit-content;
+}
+
+.market-content h2, .footer-headlist{
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family:  'Cinzel Decorative', cursive;
+    margin: 20px 0;
+}
+
+.market-content h2, .market-content h2 a{
+    
+    color: cornsilk;
+    text-decoration: none;
+}
+
+.market-content ul {
+    list-style: none;
+    display: flex;
+    margin: 0 auto 10px;
+}
+.market-content ul li{
+    color: whitesmoke;
+    font-size: 15px;
+}
+.marketimg{
+    margin: 0 auto;
+    width: 300px;
+}
+
+.marketimg img{
+    
+    width: 300px;
+}
+
+.sloganM{ 
+    padding-top: 15px;
+    font-family:"Gothic A1";
+    text-shadow: black 5px 0 25px;
+    margin-bottom: 35px;
+    color: whitesmoke;
+}
+
+.sloganM b{
+    color: #DD7400;
+    text-shadow: rgb(255, 217, 1) 5px 0 20px;
+}
+
+@media (max-width: 360px) {
+    .containerM{
+        padding: 0;
+    }
+    .market-content{
+        width: 100%;
+        padding: 0;
+    }
+}
